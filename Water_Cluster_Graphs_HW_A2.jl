@@ -4,6 +4,9 @@
 using Markdown
 using InteractiveUtils
 
+# ╔═╡ 4cadb4c1-914b-403d-b81e-afd9246c68be
+import Pkg; Pkg.add("Images")
+
 # ╔═╡ 17fc4346-a462-11eb-0484-7b4029b01f4d
 using Images
 
@@ -141,6 +144,18 @@ md"
 ### How are bonding configurations of water related to cluster stability?
 "
 
+# ╔═╡ e7895abf-ad9b-4153-9927-2c5215b52562
+load("assets/bonding_configuration_correlation.png")
+
+# ╔═╡ b3527c13-bda8-4b8d-a48d-8e20631eec52
+md"
+Let's begin by explorig the correlations between different bonding types. Above, I have plotted the five most prominent ones correlated against one another. There are a few intersting trends here. One is that AAD and ADD configurations are strongly correlated to one another. This makes sense I think, as these configurations are most likely to be found on the surface of a cluster, and there are many surface molecules in these size clusters generally.
+
+Another trend is that for larger clusters (N > 20), the presence of AD molecules greatly decreases the number of AAD, ADD, and AADD molecules. Finally, a large number of AAADD molecules tends to be anti-correlated to AADD molecules in particular.
+
+Now that we have a sense of the data, let's look at how different bonding arrangements contribute to molecule stability. In particular, let's focus on clusters with 20-30 molecules since this data skews towwards large clusters quite dramatically.
+"
+
 # ╔═╡ c9b0f626-65c3-4912-9b66-e76f7decc0f6
 load("assets/rings_vs_energy_20_to_30.png")
 
@@ -186,6 +201,7 @@ Fortunately, because this data comes from my own research, I was able to guarant
 "
 
 # ╔═╡ Cell order:
+# ╟─4cadb4c1-914b-403d-b81e-afd9246c68be
 # ╟─17fc4346-a462-11eb-0484-7b4029b01f4d
 # ╟─3ca7a180-e6ad-4734-b19f-4480de52d13c
 # ╟─30339b9c-95a9-4a0e-b7d6-abd65f958e3d
@@ -212,6 +228,8 @@ Fortunately, because this data comes from my own research, I was able to guarant
 # ╟─7c5a19cd-9952-4ecc-adef-676031112e99
 # ╟─b920bfbb-82ad-4f57-8e1c-f0001e7d77a0
 # ╟─0eda0aaf-63b7-4540-af84-667ca53d57b0
+# ╟─e7895abf-ad9b-4153-9927-2c5215b52562
+# ╟─b3527c13-bda8-4b8d-a48d-8e20631eec52
 # ╟─c9b0f626-65c3-4912-9b66-e76f7decc0f6
 # ╟─aa2ee694-5f1e-47ac-93e7-f3f99023103f
 # ╟─ef7eb7e2-492e-4203-9106-90342735e47c
