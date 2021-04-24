@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-JULIA_PROJECT="/home/jovyan"
+JULIA_PROJECT="/home/heindelj"
 julia -e "import Pkg; Pkg.Registry.update(); Pkg.instantiate(); Pkg.status(); Pkg.precompile()"
 
 jupyter labextension install @jupyterlab/server-proxy
