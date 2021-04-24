@@ -4,9 +4,6 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ 4cadb4c1-914b-403d-b81e-afd9246c68be
-import Pkg; Pkg.add("Images")
-
 # ╔═╡ 17fc4346-a462-11eb-0484-7b4029b01f4d
 using Images
 
@@ -201,7 +198,6 @@ Fortunately, because this data comes from my own research, I was able to guarant
 "
 
 # ╔═╡ Cell order:
-# ╠═4cadb4c1-914b-403d-b81e-afd9246c68be
 # ╟─17fc4346-a462-11eb-0484-7b4029b01f4d
 # ╟─3ca7a180-e6ad-4734-b19f-4480de52d13c
 # ╟─30339b9c-95a9-4a0e-b7d6-abd65f958e3d
