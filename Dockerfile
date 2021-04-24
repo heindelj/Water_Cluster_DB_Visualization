@@ -18,7 +18,7 @@ COPY --chown=${NB_USER}:users ./notebooks ./notebooks
 COPY --chown=${NB_USER}:users ./Project.toml ./Project.toml
 COPY --chown=${NB_USER}:users ./Manifest.toml ./Manifest.toml
 
-ENV JULIA_PROJECT=/home/heindelj/
+ENV JULIA_PROJECT=/home/heindelj
 RUN julia -e "import Pkg; Pkg.Registry.update(); Pkg.instantiate(); Pkg.status(); Pkg.precompile()"
 
 RUN jupyter labextension install @jupyterlab/server-proxy && \
